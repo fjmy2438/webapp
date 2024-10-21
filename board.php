@@ -1,7 +1,7 @@
 <?php
 /**
 * セッション開始
-* セッションの保存期間を1800秒に指定　※任意の秒数へ変更可能
+* セッションの保存期間を1800秒に指定　※任意の秒数へ変更可能 
 * かつ、確実に破棄する
 */
 ini_set('session.gc_maxlifetime', 1800);
@@ -181,7 +181,7 @@ echo "<p class='err'>{$err_msg_comment}</p>";
 <!-- 投稿タイトル -->
 <span><?php echo $post_item['title']; ?></span>
 <!-- 投稿者ID -->
-<span>／投稿者：<?php echo $post_item['contributor_id']; ?></span>
+<span>／投稿者 ：<?php echo $post_item['contributor_id']; ?></span>
 <!-- 投稿内容 -->
 <p class="p-pre"><?php echo $post_item['comment']; ?></p>
 <!-- 投稿日時 -->
